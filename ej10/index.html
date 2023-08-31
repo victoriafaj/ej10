@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Estilo de Lista</title>
+</head>
+<body>
+    <h2>Lista de Animales</h2>
+    <ul id="listaAnimales">
+        <li>Perro</li>
+        <li>Gato</li>
+        <li>León</li>
+        <li>Elefante</li>
+        <li>Oso</li>
+        <li>Tigre</li>
+        <li>Lobo</li>
+        <li>Cebra</li>
+        <li>Canguro</li>
+        <li>Jirafa</li>
+    </ul>
+    
+    <button id="cambiarEstiloBtn">Cambiar Estilo de Lista</button>
+    
+    <script>
+        const listaAnimales = document.getElementById('listaAnimales');
+        const cambiarEstiloBtn = document.getElementById('cambiarEstiloBtn');
+        
+        cambiarEstiloBtn.addEventListener('click', () => {
+            listaAnimales.style.listStyleType = 'square'; // Cambiar el estilo de viñetas a cuadrados
+            listaAnimales.style.color = 'blue'; // Cambiar el color del texto de la lista
+            listaAnimales.style.fontFamily = 'Arial'; // Cambiar la fuente del texto de la lista
+        });
+    </script>
+</body>
+</html>
+
